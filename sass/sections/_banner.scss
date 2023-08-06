@@ -1,0 +1,101 @@
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: #bfc0c0;
+    background: linear-gradient(0deg, #bfc0c0 2%, #ff6700 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .presentacion{
+
+        height: 70%;
+        width: 80%;
+
+        display: flex;
+        
+        justify-content: space-between;
+        .texto{
+            width: 48%;
+
+            display: flex;
+            flex-direction: column;
+            text-align: end;
+            h1{
+                font-size: 7rem;
+                font-weight: 1000;
+                font-family: 'Pacifico', cursive;
+                padding-bottom: 5rem;
+            }
+
+            h2{
+                font-size: 2rem;
+                font-weight: 500;
+                font-style: italic;
+                padding-bottom: 5rem;
+            }
+            .texto__boton{
+                display: flex;
+                justify-content: end;
+                a{
+                    text-decoration: none;
+                    color: #3917a8;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-right: .5rem;
+                    text-align: end;
+                    padding:1.2rem;
+                    border:1px solid #54428E;
+                    border-radius: 1rem;
+                    background-image: linear-gradient(#3917a8, #3917a8), linear-gradient(#ffffff00, #ffffff00);
+                    background-size: 0 100%, auto;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    transition: all .2s ease-out;
+                    &:hover{
+                        color: #fff;
+                        background-size: 100% 100%, auto;
+                    }
+                }
+            }
+            
+        }
+        .imagen{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            
+            .imagen__contenedor{
+                height: 35rem;
+                width: 35rem;
+                overflow: hidden;
+                border-radius: 50%;
+                img{
+                    height: 100%;
+                    
+                }
+            }
+        }
+    }
+    .custom-shape-divider-bottom-1691191067 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1691191067 svg {
+        position: relative;
+        display: block;
+        width: calc(109% + 1.3px);
+        height: 204px;
+    }
+    
+    .custom-shape-divider-bottom-1691191067 .shape-fill {
+        fill: #FFFFFF;
+    }
+    
+}
+

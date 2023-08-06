@@ -1,0 +1,92 @@
+.proyectos{
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+    padding: 10rem 0 2rem 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .proyecto__contenedor{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+        .titulo__contenedor{
+            padding-bottom: 1rem;
+            font-size: 1.3rem;
+            color: #ff6700;
+            font-weight: 600;
+        }
+        .texto__contenedor{
+            padding-bottom: 3rem;
+            font-size: 2rem;
+            font-weight: 300;
+            
+        }
+        .contenedor__proyectos--totales{
+            display: flex;
+            background-color: aqua;
+            width: 100%;
+            height: auto;
+            .proyecto{
+                position: relative;
+                margin: 2rem;
+                width: 30rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                flex-wrap: wrap;
+                img{
+                    position: relative;
+                    width: 30rem;
+                    transition: transform 1s ease; 
+                    z-index: 1;
+                }
+                &:hover img {
+                    transform: scale(1.1); 
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #00000080;
+                    top: 0;
+                    left: 0;
+                    z-index: 3;
+                    opacity: 0;
+                    transition: .5s all;
+                }
+                &:hover::before{
+                    opacity: 1;
+                }
+                .contenido__proyecto{
+                    position: absolute;
+                    width: 100%;
+                    height: 80%;
+                    flex-direction: column;
+                    z-index: 4;
+                    display: flex;
+
+                    align-items: center;
+                    justify-content: space-around;
+                    .texto{
+                        width: 80%;
+                        height: 40%;
+                        text-align: center;
+                    }
+                    h3{
+                        color: #fff;
+                    }
+                    p{
+                        color: #fff;
+                        font-size:.9em ;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
+

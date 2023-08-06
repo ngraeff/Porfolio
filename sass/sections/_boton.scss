@@ -1,0 +1,33 @@
+.boton__arriba {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6700 ;
+    cursor: pointer;
+    width: 3rem;    
+    height: 3rem;
+    padding: .5rem;
+    border-radius: 50%;
+    border: 1px solid #ff6700 ;
+    svg{
+        width: 80%;
+        fill: #ffffff;
+        
+    }
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.mostrar{
+    opacity: 1;
+    transition:.5s all;
+    &:hover{
+        background-color: #3917a8;
+        border: #3917a8;
+        
+    }
+
+}
