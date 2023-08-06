@@ -539,7 +539,6 @@ header nav .navbar li .seleccionado::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: aqua;
   width: 100%;
   height: auto;
 }
@@ -559,6 +558,8 @@ header nav .navbar li .seleccionado::before {
   overflow: hidden;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5019607843);
 }
 .proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto img {
   position: relative;
@@ -589,10 +590,13 @@ header nav .navbar li .seleccionado::before {
 .proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto:hover::before {
   opacity: 1;
 }
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto:hover .contenido__proyecto {
+  opacity: 1;
+}
 .proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto {
   position: absolute;
   width: 100%;
-  height: 80%;
+  height: 90%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -606,17 +610,106 @@ header nav .navbar li .seleccionado::before {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  opacity: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 .proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .texto {
   width: 80%;
-  height: 40%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto h3 {
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .texto h3 {
   color: #fff;
+  font-size: 1.5em;
 }
-.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto p {
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .texto p {
   color: #fff;
-  font-size: 0.9em;
+  font-size: 1.2em;
   font-style: italic;
+}
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .contenido__proyecto--links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .contenido__proyecto--links .link--a,
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .contenido__proyecto--links .repo--a {
+  position: relative;
+  border: solid white 1px;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .contenido__proyecto--links .link--a .repo,
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .contenido__proyecto--links .repo--a .repo {
+  width: 2rem;
+}
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .contenido__proyecto--links .link--a .link,
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .contenido__proyecto--links .repo--a .link {
+  width: 2rem;
+}
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .contenido__proyecto--links .link--a::before {
+  content: "Ver Proyecto";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(0);
+          transform: translateX(-50%) scale(0);
+  white-space: nowrap;
+  background-color: rgba(1, 5, 68, 0.5019607843);
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .contenido__proyecto--links .link--a:hover::before {
+  -webkit-transform: translateX(-50%) scale(0.8);
+          transform: translateX(-50%) scale(0.8);
+  opacity: 1;
+}
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .contenido__proyecto--links .repo--a::before {
+  content: "Ver Repositorio";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(0);
+          transform: translateX(-50%) scale(0);
+  white-space: nowrap;
+  background-color: rgba(1, 5, 68, 0.5019607843);
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+.proyectos .proyecto__contenedor .contenedor__proyectos--totales .proyecto .contenido__proyecto .contenido__proyecto--links .repo--a:hover::before {
+  -webkit-transform: translateX(-50%) scale(0.8);
+          transform: translateX(-50%) scale(0.8);
+  opacity: 1;
 }
