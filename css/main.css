@@ -800,7 +800,7 @@ footer .contenedor__footer p {
     overflow: hidden;
     width: 100%;
     z-index: -1;
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 11rem);
     -webkit-transition: top 0.5s;
     transition: top 0.5s;
   }
@@ -825,7 +825,7 @@ footer .contenedor__footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-right: 4rem;
+    margin-right: 4rem;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -908,8 +908,8 @@ footer .contenedor__footer p {
   .banner .custom-shape-divider-bottom-1691191067 svg {
     position: relative;
     display: block;
-    width: calc(143% + 1.3px);
-    height: 124px;
+    width: calc(150% + 1.3px);
+    height: 120px;
   }
   .banner .custom-shape-divider-bottom-1691191067 .shape-fill {
     fill: #FFFFFF;
