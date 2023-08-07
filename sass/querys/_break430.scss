@@ -51,6 +51,7 @@
         padding-top:120px;
         
         .contenedor__sobremi{
+            padding: 3rem 1rem 1rem 1rem;
             .sobremi__title{
                 font-size: .6rem;
                 font-weight: 500;
@@ -58,7 +59,7 @@
                 top: -1rem;
             }
             .sobremi__description{
-                font-size: .6rem;
+                font-size: .8rem;
                 padding: 0;
             }
 
@@ -66,9 +67,9 @@
                 .red{
                     a{
                         padding: .4rem;
-                        margin: .2rem;
+                        margin: .8rem;
                         svg{
-                            width: 1.4rem;
+                            width: 1.2rem;
                         }
                     }
                 }
