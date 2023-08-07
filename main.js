@@ -49,3 +49,21 @@ navbarLinks.forEach(menuLink => {
         observer.observe(target)
     }
 })
+
+/* navbar responsive */
+
+const toggle= document.querySelector(".toggle")
+const links = document.querySelector(".navbar")
+
+
+toggle.addEventListener("click", function () {
+    links.classList.toggle("active")
+    toggle.classList.toggle("active");
+})
+
+navbarLinks.forEach(link => {
+    link.addEventListener("click", function () {
+        links.classList.remove("active"); 
+        toggle.classList.remove("active");
+    });
+});

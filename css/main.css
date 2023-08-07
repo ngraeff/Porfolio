@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -775,8 +776,80 @@ footer .contenedor__footer p {
 }
 
 @media screen and (max-width: 800px) {
-  header {
-    display: none;
+  header nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav .navbar {
+    padding: 0;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: -100vh;
+    bottom: 0;
+    background-color: #ff6600;
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+    height: calc(100vh - 10rem);
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+  }
+  header nav .navbar li a {
+    font-size: 1.5rem;
+    margin: 4rem 0;
+  }
+  header nav .active {
+    top: 0;
+  }
+  header nav .toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 4rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  header nav .toggle .toggle__line {
+    width: 100%;
+    height: 3px; /* Ajusta la altura de las líneas */
+    background-color: #000;
+    margin: 2px 0; /* Ajusta el margen para centrar mejor */
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  header nav .toggle.active .toggle__line--up {
+    -webkit-transform: rotate(45deg) translateY(6.8px) scaleX(1.3);
+            transform: rotate(45deg) translateY(6.8px) scaleX(1.3);
+    margin: 0;
+  }
+  header nav .toggle.active .toggle__line--down {
+    -webkit-transform: rotate(-45deg) translateY(-6.8px) scaleX(1.3);
+            transform: rotate(-45deg) translateY(-6.8px) scaleX(1.3);
+    margin: 0;
+  }
+  header nav .toggle.active .toggle__line--mid {
+    background-color: transparent;
   }
   .banner .presentacion {
     height: 70%;
@@ -952,9 +1025,6 @@ footer .contenedor__footer p {
   }
 }
 @media screen and (max-width: 500px) {
-  header {
-    display: none;
-  }
   .banner .presentacion {
     height: 100%;
     width: 100%;
