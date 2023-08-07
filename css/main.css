@@ -83,6 +83,7 @@ html {
   background-position: center center;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  z-index: 10;
 }
 .banner .presentacion .texto .texto__boton a:hover {
   color: #fff;
@@ -1072,11 +1073,14 @@ footer .contenedor__footer p {
   .banner .presentacion .texto .texto__boton a {
     font-size: 1rem;
   }
+  .card__contenedor--sec {
+    padding-top: 120px;
+  }
   .card__contenedor--sec .card__contenedor--div .card {
     margin: 1rem 0.5rem;
   }
   .sobremi {
-    padding: 3rem 0 0 0;
+    padding-top: 120px;
   }
   .sobremi .contenedor__sobremi .sobremi__title {
     font-size: 0.6rem;
@@ -1096,7 +1100,7 @@ footer .contenedor__footer p {
     width: 1.4rem;
   }
   .proyectos {
-    padding: 2rem 0 0 0;
+    padding-top: 120px;
   }
   .proyectos .proyecto__contenedor {
     width: 80%;

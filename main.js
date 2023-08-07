@@ -63,7 +63,34 @@ toggle.addEventListener("click", function () {
 
 navbarLinks.forEach(link => {
     link.addEventListener("click", function () {
-        links.classList.remove("active"); 
-        toggle.classList.remove("active");
+        links.classList.remove("active")
+        toggle.classList.remove("active")
+    })
+})
+
+
+const proyectoElements = document.querySelectorAll(".proyecto")
+function updateAosAttribute(element) {
+    if (window.innerWidth >= 600) {
+        element.setAttribute("data-aos", "fade-up");
+    } else {
+        element.setAttribute("data-aos", "fade-right");
+    }
+}
+
+
+proyectoElements.forEach(element => {
+    updateAosAttribute(element);
+});
+
+// Agrega un evento para escuchar los cambios en el tamaño de la ventana
+window.addEventListener("resize", function() {
+    proyectoElements.forEach(element => {
+        updateAosAttribute(element);
     });
 });
+
+
+
+
+
