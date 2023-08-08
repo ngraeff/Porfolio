@@ -71,7 +71,7 @@
 
     .banner {
         background-color: $color-terciario;
-        background: linear-gradient(0deg, $color-terciario 0%, $color-principal 100%);
+        background: linear-gradient(0deg, $color-terciario 8%, $color-principal 80%);
         .presentacion {
             height: 70%;
             width: 100%;
@@ -132,7 +132,7 @@
             position: relative;
             display: block;
             width: calc(124% + 1.3px);
-            height: 121px;
+            height: 150px;
         }
 
         .custom-shape-divider-bottom-1691191067 .shape-fill {

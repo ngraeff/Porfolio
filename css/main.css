@@ -856,8 +856,8 @@ footer .contenedor__footer p {
   }
   .banner {
     background-color: #ffffff;
-    background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ff6700));
-    background: linear-gradient(0deg, #ffffff 0%, #ff6700 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #ffffff), color-stop(80%, #ff6700));
+    background: linear-gradient(0deg, #ffffff 8%, #ff6700 80%);
   }
   .banner .presentacion {
     height: 70%;
@@ -917,7 +917,7 @@ footer .contenedor__footer p {
     position: relative;
     display: block;
     width: calc(124% + 1.3px);
-    height: 121px;
+    height: 150px;
   }
   .banner .custom-shape-divider-bottom-1691191067 .shape-fill {
     fill: #ffffff;
