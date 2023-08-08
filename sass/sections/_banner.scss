@@ -21,17 +21,17 @@
             flex-direction: column;
             text-align: end;
             h1{
-                font-size: 6rem;
+                font-size: 5rem;
                 font-weight: 1000;
                 font-family: 'Pacifico', cursive;
-                padding-bottom: 4rem;
+                padding-bottom: 3rem;
             }
 
             h2{
                 font-size: 2rem;
                 font-weight: 500;
                 font-style: italic;
-                padding-bottom: 3rem;
+                padding-bottom: 2rem;
             }
             .texto__boton{
                 display: flex;
@@ -91,7 +91,7 @@
         position: relative;
         display: block;
         width: calc(109% + 1.3px);
-        height: 204px;
+        height: 140px;
     }
     
     .custom-shape-divider-bottom-1691191067 .shape-fill {
