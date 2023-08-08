@@ -7,7 +7,7 @@
     justify-content: center;
     padding: 6rem 0 2rem 0 ;
     h1{
-        color:#ff6700 ;
+        color:$color-principal ;
         font-size: 2rem;
         font-weight: 600;
     }
@@ -24,9 +24,9 @@
         position: relative;
         width: 13rem;
         height: 18rem;
-        border: 1px solid #ff6700;
+        border: 1px solid $color-principal;
         border-radius: 2rem;
-        background-color: #ff6700;
+        background-color: $color-principal;
         margin: 2rem;
         overflow: hidden;
         perspective: 1000px;
@@ -64,8 +64,8 @@
         }
         &:hover {
             transform: rotateY(180deg);
-            background-color: #3917a8;
-            border: 1px solid #3917a8;
+            background-color: $color-secundario;
+            border: 1px solid $color-secundario;
             }
         &:hover .front {
                 opacity: 0;
@@ -101,7 +101,7 @@
             font-size: 1.3rem;
             font-weight: 600;
             z-index: 1;
-            color: aliceblue;
+            color: $color-terciario;
         }
         .description{
             grid-area: descripcion;
@@ -111,7 +111,7 @@
             font-size: 1rem;
             font-weight: 300;
             z-index: 1;
-            color: #f0f8ff;
+            color: $color-terciario;
         
         }
     }

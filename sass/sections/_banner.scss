@@ -1,8 +1,8 @@
 .banner {
     width: 100%;
     height: 100vh;
-    background: #bfc0c0;
-    background: linear-gradient(0deg, #bfc0c0 2%, #ff6700 100%);
+    background: $color-gris;
+    background: linear-gradient(0deg, $color-gris 2%, $color-principal 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,22 +38,22 @@
                 justify-content: end;
                 a{
                     text-decoration: none;
-                    color: #3917a8;
+                    color: $color-secundario;
                     font-size: 1.5rem;
                     font-weight: 600;
                     margin-right: .5rem;
                     text-align: end;
                     padding:1.2rem;
-                    border:1px solid #54428E;
+                    border:1px solid $color-secundario;
                     border-radius: 1rem;
-                    background-image: linear-gradient(#3917a8, #3917a8), linear-gradient(#ffffff00, #ffffff00);
+                    background-image: linear-gradient($color-secundario, $color-secundario), linear-gradient(#ffffff00, #ffffff00);
                     background-size: 0 100%, auto;
                     background-repeat: no-repeat;
                     background-position: center center;
                     transition: all .2s ease-out;
                 
                     &:hover{
-                        color: #fff;
+                        color: $color-terciario;
                         background-size: 100% 100%, auto;
                     }
                 }
@@ -95,7 +95,7 @@
     }
     
     .custom-shape-divider-bottom-1691191067 .shape-fill {
-        fill: #FFFFFF;
+        fill: $color-terciario;
     }
     
 }

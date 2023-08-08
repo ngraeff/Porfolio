@@ -8,7 +8,7 @@
     align-items: center;
     .contenedor__sobremi{
         width: 60%;
-        border: solid 1px #ff6700;
+        border: solid 1px $color-principal;
         border-radius: 1rem;
         padding: 4rem 2rem ;
         padding-bottom: 2.5rem;
@@ -25,7 +25,7 @@
             transform: translateX(-50%);
             padding: .5rem 1rem;
             color: #fff;
-            background-color: #ff6700;
+            background-color: $color-principal;
             border-radius: .3rem;
             box-shadow: -1px -1px 1rem #00000080;
         }
@@ -49,17 +49,17 @@
                 a{
                     padding: .7rem;
                     border-radius: 50%;
-                    border: 1px solid #ff6700;
+                    border: 1px solid $color-principal;
                     transition: .3s all;
                     &:hover{
-                        background-color: #ff6700;
+                        background-color: $color-principal;
                     }
                     &:hover svg{
                         fill: #000000;
                     }
                     svg{
                         width: 2rem;
-                        fill: #ff6700;
+                        fill: $color-principal;
                         transition: .3s all;
                     }
                 }

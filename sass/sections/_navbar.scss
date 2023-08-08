@@ -28,7 +28,7 @@ header{
                     font-weight: 1000;
                     transition: .5s all;
                     &:hover{
-                        color: #3917a8;
+                        color: $color-secundario;
                     }
 
                     &::before{
@@ -38,7 +38,7 @@ header{
                         height: .2rem;
                         bottom: -.5rem;
                         left: 0;
-                        background-color: #3917a8;
+                        background-color: $color-secundario;
                         transform: scaleX(0);
                         transition: .5s all;
                     }
@@ -47,7 +47,7 @@ header{
                     }
                 }
                 .seleccionado{
-                    color: #3917a8;
+                    color: $color-secundario;
                     &::before{
                         transform: scaleX(1);
                     }
@@ -63,7 +63,7 @@ header{
 .abajo{
     top: 0;
     height: 5rem;
-    background-color: #ff6600cc;
+    background-color: $color-principal;
     box-shadow: 0 0 10px #00000080;
     z-index: 1000;
     

@@ -21,7 +21,7 @@
             text-align: left;
             padding-bottom: 1rem;
             font-size: 1.3rem;
-            color: #ff6700;
+            color: $color-principal;
             font-weight: 600;
             margin-left: 4rem;
         }
@@ -106,12 +106,12 @@
                         align-items: center;
 
                         h3 {
-                            color: #fff;
+                            color: $color-terciario;
                             font-size: 1.5em;
                         }
 
                         p {
-                            color: #fff;
+                            color: $color-terciario;
                             font-size: 1.2em;
                             font-style: italic;
                         }
@@ -145,7 +145,7 @@
                             transform: translateX(-50%) scale(0);
                             white-space: nowrap;
                             background-color: #01054480;
-                            color: #ffffff;
+                            color: $color-terciario;
                             padding: 0.5rem;
                             border-radius: 5px;
                             opacity: 0;
@@ -164,7 +164,7 @@
                             transform: translateX(-50%) scale(0);
                             white-space: nowrap;
                             background-color: #01054480;
-                            color: #ffffff;
+                            color: $color-terciario;
                             padding: 0.5rem;
                             border-radius: 5px;
                             opacity: 0;
