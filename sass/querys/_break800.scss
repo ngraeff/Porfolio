@@ -76,9 +76,10 @@
             height: 70%;
             width: 100%;
             padding: 0;
-
+           
             .texto {
                 width: 40%;
+                z-index: auto;
                 padding-left: 1rem;
                 text-align: end;
                 justify-content: center;
@@ -94,6 +95,7 @@
                 }
 
                 .texto__boton {
+                    z-index: auto;
                     align-items: center;
                     justify-content: end;
 
