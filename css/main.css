@@ -920,11 +920,11 @@ footer .contenedor__footer p {
   }
   .banner .presentacion .texto h1 {
     font-size: 4em;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
   .banner .presentacion .texto h2 {
     font-size: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1.8rem;
   }
   .banner .presentacion .texto .texto__boton {
     z-index: auto;
