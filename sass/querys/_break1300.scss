@@ -1,0 +1,68 @@
+@media screen and (max-width: 1300px){
+    .banner {
+        .presentacion{
+            width: 90%;
+            .texto{
+                padding-right: 3rem;
+                h1{
+                    font-size: 5.5rem;
+                    padding-bottom: 3rem;
+                }
+                h2{
+                    font-size: 1.7rem;
+                    padding-bottom: 3rem;
+                }
+                .texto__boton{
+                    z-index: 10;
+                }
+            }
+            .imagen{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .imagen__contenedor{
+                    height: 25rem;
+                    width: 25rem;
+                }
+            }
+        }
+    }
+    .card__contenedor--sec{
+        .card__contenedor--div{
+            width: 85%;
+
+            .card{
+                margin: 1rem;
+                width: 12rem;
+            }
+        }
+    }
+
+    .sobremi{
+        .contenedor__sobremi{
+            .sobremi__redes{
+                width: 70%;
+            }
+        }
+    }
+
+    .proyectos{
+        .proyecto__contenedor {
+            .titulo__contenedor {
+                margin-left: 0rem;
+            }
+            .texto__contenedor {
+                margin-left: 0rem;
+            }
+
+            .contenedor__proyectos--totales {
+                width: 100%;
+                .proyecto {
+                    margin: 1rem;
+                    width: 20rem;
+                }
+            }
+        }
+    }
+
+}
