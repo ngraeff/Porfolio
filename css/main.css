@@ -851,10 +851,17 @@ footer .contenedor__footer p {
   header nav .toggle.active .toggle__line--mid {
     background-color: transparent;
   }
+  .banner {
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #FFFFFF;
+  }
   .banner .presentacion {
     height: 70%;
     width: 100%;
     padding: 0;
+    background-color: #b87575;
   }
   .banner .presentacion .texto {
     width: 40%;
@@ -1034,6 +1041,8 @@ footer .contenedor__footer p {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-bottom: 0;
+    overflow: hidden;
   }
   .banner .presentacion .imagen {
     display: none;
