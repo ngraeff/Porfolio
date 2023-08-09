@@ -325,6 +325,9 @@ header nav .navbar li .seleccionado::before {
           align-items: center;
   z-index: 1;
 }
+.card__contenedor--sec .card .img svg {
+  width: 50%;
+}
 .card__contenedor--sec .card img {
   width: 50%;
 }
